@@ -95,7 +95,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 800px;
+    height: 500px;
     justify-content: center;
 }
 .View-Work > h1{
