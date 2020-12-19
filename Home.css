@@ -10,7 +10,24 @@
     justify-content: flex-end;
 }
 .Nav-Elements > li {
-    color: gray;
+    color: #707070;
     padding: 1vw 2vw 1vw 2vw;
-    background-color: wheat;
+}
+.Nav-Elements > li:hover {
+    background-color: #ff5672;
+    color: white;
+    transition-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+.Show-More > button {
+    background-color: #ff5672;
+    border: none;
+    color: #ffe8ec;
+    padding: 0.8vw 2vw 0.8vw 2vw;
+}
+.Show-More > button:hover {
+    background-color: #fc758c;
+    color: white;
+    transition-duration: 0.5s;
+    animation-timing-function: ease-in-out;
 }
