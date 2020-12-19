@@ -63,6 +63,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 300px;
+    background-color: white;
 }
 .Social-Media > i {
     margin-right: 10px;
@@ -122,4 +123,85 @@ body {
 main{
     height: 50%;
     overflow-y: scroll;
+}
+.Inner-Nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    justify-content: space-evenly;
+}
+.Inner-Nav > div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100px;
+}
+.fa-th-large:hover {
+    color: #ff5773;
+    cursor: pointer;
+}
+.fa-th-large{
+    transition: all .4s ease-in-out;
+}
+.fa-th-list{
+    transition: all .4s ease-in-out;
+}
+.fa-th-list:hover {
+    color: #ff5773;
+    cursor: pointer;
+}
+.Grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    justify-content: space-evenly;
+}
+.Image-Card{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin-top: 30px;
+}
+.Image-Card > img{
+    width: 100%;
+    height: 100%;
+}
+.Image-Branding{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    opacity: 0;
+    background-color: #ff5773;
+    color: white;
+    transition: all .4s ease-in-out;
+}
+.Image-Branding:hover{
+    opacity: 1;
+}
+.Image-Branding > h3 {
+    letter-spacing: 6px;
+}
+.Image-Branding > h3:hover{
+    cursor: default;
+}
+.Image-Branding > h4 {
+    letter-spacing: 6px;
+}
+.Image-Branding > h4:hover{
+    cursor: default;
+}
+.Image-Branding > hr {
+    border: 1px solid white;
+    width: 80%;
+}
+.Image-Branding > hr:hover{
+    cursor: default;
 }
