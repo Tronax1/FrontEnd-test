@@ -1,0 +1,16 @@
+.Header {
+    font-family: 'Questrial', sans-serif;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.Nav-Elements {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+}
+.Nav-Elements > li {
+    color: gray;
+    padding: 1vw 2vw 1vw 2vw;
+    background-color: wheat;
+}
