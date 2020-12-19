@@ -8,11 +8,7 @@ body {
     padding-bottom: 20px;
 }
 .Nav-Elements {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    padding-left: 7vw;
-    padding-right: 7vw;
+    display: none;
 }
 .Nav-Elements > li {
     color: #707070;
@@ -204,4 +200,62 @@ main{
 }
 .Image-Branding > hr:hover{
     cursor: default;
+}
+.Nav-Elements-Mobile{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+.Nav-Elements-Mobile > button{
+    height: 60%;
+    background-color: white;
+    border: none;
+    margin-right: 40px;
+}
+.fa-bars{
+    margin-top: 0%;
+}
+.Drop-Down{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    bottom: 0;
+    top: 150;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 10;
+    display: none;
+}
+.Drop-Down > li {
+    color: #707070;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    transition: all .2s ease-in-out;
+    width: 100%;
+    text-align: center;
+}
+.Drop-Down > li:hover {
+    background-color: #ff5672;
+    color: white;
+    cursor: pointer;
+}
+.Drop-Down > li:active {
+    background-color: #ff5672;
+    color: white;
+    cursor: pointer;
+}
+@media only screen and (min-width: 768px){
+    .Nav-Elements {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+    .Nav-Elements-Mobile{
+        display: none;
+    }
 }

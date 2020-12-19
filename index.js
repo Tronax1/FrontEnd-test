@@ -30,19 +30,29 @@ const data = [
             url: "https://images.unsplash.com/photo-1602526215099-19d4d14797d6?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwzNnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
         }
 ]
-document.getElementById("images").innerHTML = `
-    ${data.map(item => {
-        return `
-            <div class = "Image-Card">
-                <div class = "Image-Branding">
-                    <h3>CREATIVE LOGO</h3>
-                    <hr></hr>
-                    <h4>Branding</h4>
-                </div>
-                <img src=${item.url}></img>
+const renderImage = item => {
+    return `
+        <div class = "Image-Card">
+            <div class = "Image-Branding">
+                <h3>CREATIVE LOGO</h3>
+                <hr></hr>
+                <h4>Branding</h4>
             </div>
-        `
-    }).join('')}
+            <img src=${item.url}></img>
+        </div>
+`
+}
+const displayMobileMenu = () => {
+    const menu = document.getElementById("Drop-Down");
+    if(menu.style.display === "none"){
+        menu.style.display = "flex";
+    }
+    else{
+        menu.style.display = "none";
+    }
+}
+document.getElementById("images").innerHTML = `
+    ${data.map(item => renderImage(item)).join('')}
 `
 
 /*var xmlhttp = new XMLHttpRequest();
